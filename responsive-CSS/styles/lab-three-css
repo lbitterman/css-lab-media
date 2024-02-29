@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+        .container-video iframe {
+        height: 100%;
+        width: 100%;
+         display: flex;
+         align-items: center;
+      }
+    }
+  /* For tablet */
+  @media (min-width:  768px) {
+    .container-video iframe {
+        height: 100%;
+        width: 100%;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  
+  /* For desktop */
+  @media (min-width:  1200px) {
+    .container-video iframe {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+}

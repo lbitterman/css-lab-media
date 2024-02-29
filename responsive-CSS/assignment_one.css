@@ -1,0 +1,44 @@
+/*Mobile (max-width: 768px): 1 × 9 (full width cards)
+Tablet (min-width: 768px): 2 × 4 (50% width cards, last card is full width)
+Desktop (min-width: 1200px): 3 × 3 (33% width cards) */
+
+/*for mobile*/
+
+@media (max-width: 768px) {
+    .card-container {
+     display: grid;
+     grid-template-columns: repeat(1,  1fr); 
+     gap: 1rem;
+  }
+}
+  
+  /* For tablet */
+  @media (min-width:  768px) {
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(2,  384px);
+      gap: 1rem;
+    }
+    .card:nth-child(9) {
+      display: grid;
+     grid-column: 1/ span 2;
+      width: 49rem;
+      }
+      
+  }
+
+  
+  /* For desktop */
+  @media (min-width:  1200px) {
+    .card-container{
+        display: grid;
+      grid-template-columns: repeat(3,  1fr); /*  3 columns */
+      gap: 1rem;
+    }
+    .card:nth-child(9) {
+      display: grid;
+      grid-column: span  1;
+      width: 24rem;
+    }
+  }
+  
